@@ -4,14 +4,16 @@ A persistent, interlinked markdown knowledge base skill for Claude Code, inspire
 
 ## Installation
 
-One line install:
+### Global (all projects)
+
 ```bash
-mkdir -p ~/.claude/skills && curl -fsSL https://raw.githubusercontent.com/Changhochien/claude-wiki/main/skills/llm-wiki/SKILL.md -o ~/.claude/skills/llm-wiki/SKILL.md
+mkdir -p ~/.claude/skills && git clone --depth 1 https://github.com/Changhochien/claude-wiki.git /tmp/claude-wiki && cp /tmp/claude-wiki/skills/llm-wiki/SKILL.md ~/.claude/skills/llm-wiki/
 ```
 
-Or clone the entire repo:
+### Project-specific
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-wiki.git ~/.claude/skills/llm-wiki-src
+mkdir -p .claude/skills/llm-wiki && git clone --depth 1 https://github.com/Changhochien/claude-wiki.git /tmp/claude-wiki && cp /tmp/claude-wiki/skills/llm-wiki/SKILL.md .claude/skills/llm-wiki/
 ```
 
 ## What It Does
