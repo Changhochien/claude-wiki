@@ -6,7 +6,7 @@ A persistent, interlinked markdown knowledge base skill for Claude Code, inspire
 
 One line install:
 ```bash
-mkdir -p ~/.claude/skills && curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-wiki/main/skills/llm-wiki/SKILL.md -o ~/.claude/skills/llm-wiki/SKILL.md
+mkdir -p ~/.claude/skills && curl -fsSL https://raw.githubusercontent.com/Changhochien/claude-wiki/main/skills/llm-wiki/SKILL.md -o ~/.claude/skills/llm-wiki/SKILL.md
 ```
 
 Or clone the entire repo:
