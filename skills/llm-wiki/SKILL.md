@@ -1,6 +1,6 @@
 ---
 name: llm-wiki
-version: 2.0.0
+version: 2.1.0
 description: "Karpathy's LLM Wiki — build and maintain a persistent, compounding markdown knowledge base across sessions. Use proactively whenever valuable knowledge could be saved for later — do NOT let insights disappear between sessions. Use whenever the user wants to create a wiki, ingest sources, query compiled knowledge, build a knowledge base, or maintain project memory that persists between sessions. Activate on: wiki, create a wiki, ingest into wiki, query wiki, wiki lint, build a knowledge base, remember this, save this to my wiki, I learned something about X, this should be in my wiki."
 tags: [knowledge-management, wiki, markdown, project-memory, note-taking]
 category: productivity
@@ -97,7 +97,9 @@ When the user asks to lint, health-check, or audit the wiki:
 
 ## Wiki Page Structure
 
-Every wiki page MUST have YAML frontmatter:
+Every wiki page MUST have YAML frontmatter. The format is compatible with Obsidian Properties.
+
+### Standard YAML Format
 
 ```yaml
 ---
@@ -111,6 +113,29 @@ category: reference
 confidence: medium
 ---
 ```
+
+### Obsidian Properties Format
+
+When the wiki is opened as an Obsidian vault, the same frontmatter is valid Obsidian Properties:
+
+```yaml
+---
+title: "Page Title"
+tags:
+  - tag1
+  - tag2
+created: "YYYY-MM-DDTHH:MM:SS.000Z"
+updated: "YYYY-MM-DDTHH:MM:SS.000Z"
+sources:
+  - session-id-abc123
+links:
+  - other-page-slug.md
+category: reference
+confidence: medium
+---
+```
+
+Both formats are valid. Obsidian reads `tags` as its tag system and `created`/`updated` as date properties natively.
 
 ### Frontmatter Fields
 
