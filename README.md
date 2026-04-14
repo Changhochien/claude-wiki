@@ -181,8 +181,10 @@ Health-check the wiki. Detects:
 
 ### Wiki path
 
+Default: `wiki/` (relative to project root). Override via environment variable or config:
+
 ```bash
-export WIKI_PATH=~/my-knowledge-base
+export WIKI_PATH=./my-knowledge-base
 ```
 
 Or in `.omc-config.json`:
@@ -190,7 +192,7 @@ Or in `.omc-config.json`:
 ```json
 {
   "wiki": {
-    "path": "~/wiki",
+    "path": "./wiki",
     "autoCapture": true,
     "staleDays": 30
   }

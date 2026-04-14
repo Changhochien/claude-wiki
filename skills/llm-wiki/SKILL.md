@@ -19,7 +19,7 @@ Unlike traditional RAG, the wiki compiles knowledge once and keeps it current. C
 
 ## Wiki Location
 
-Default: `~/wiki` (configurable via `wiki.path` in `.omc-config.json` or environment variable `WIKI_PATH`).
+Default: `wiki/` (relative to project root, e.g. `./wiki/`). Set via `wiki.path` in `.omc-config.json` or environment variable `WIKI_PATH`.
 
 The wiki is a directory of markdown files — open it in Obsidian, VS Code, or any editor.
 
