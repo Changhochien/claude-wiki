@@ -241,7 +241,7 @@ Read the relevant template before creating or updating wiki files.
 
 When the user asks to create or start a wiki:
 
-1. Determine the wiki path (default: `~/wiki`)
+1. Determine the wiki path (default: `wiki/` relative to project root, e.g. `./wiki/`)
 2. Create the directory structure
 3. Ask the user what domain the wiki covers
 4. Copy `references/SCHEMA-template.md` → `wiki/SCHEMA.md` and customize

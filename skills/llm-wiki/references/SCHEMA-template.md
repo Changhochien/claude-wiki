@@ -79,7 +79,7 @@ Create a new page only when:
 ## Hard Constraints
 
 - **NO vector embeddings** — query uses keyword + tag matching only
-- **Wiki pages are git-ignored** — `.omc/wiki/` is project-local by default
+- **Wiki pages are git-ignored** — `wiki/` is project-local by default
 - **Cross-references required** — every page must link to at least 2 other pages
 - **Keep pages scannable** — split pages over 200 lines into sub-pages
 
