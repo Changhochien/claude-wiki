@@ -31,9 +31,9 @@ wiki/
 ├── index.md            # Sectioned content catalog with one-line summaries
 ├── log.md              # Append-only operation chronicle
 ├── raw/                # Layer 1: Immutable source material
-│   ├── articles/       # Web articles, clippings — `{date}-{slug}.txt`
+│   ├── articles/       # Web articles, clippings — `{date}-{slug}.md`
 │   ├── papers/        # PDFs, arxiv papers — `{date}-{slug}.pdf`
-│   ├── transcripts/    # Meeting notes, interviews — `{date}-{slug}.txt`
+│   ├── transcripts/    # Meeting notes, interviews — `{date}-{slug}.md`
 │   └── assets/        # Images, diagrams — `{date}-{slug}.{ext}`
 ├── entities/          # Layer 2: Entity pages (people, orgs, products, models)
 ├── concepts/          # Layer 2: Concept/topic pages

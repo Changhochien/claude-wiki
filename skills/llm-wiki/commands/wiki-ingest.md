@@ -23,12 +23,12 @@ wiki-ingest({ title: "Page Title", content: "...", tags: ["tag1"], category: "re
 ## Process
 
 1. **Save the raw source** to `wiki/raw/` subdirectory (articles/, papers/, transcripts/)
-   - **Filename format:** `{YYYY-MM-DD}-{slug}.txt`
+   - **Filename format:** `{YYYY-MM-DD}-{slug}.md`
      - `YYYY-MM-DD` = date of ingestion
      - `slug` = short descriptive name (lowercase, hyphens, no spaces)
-     - Example: `2026-04-15-auth-token-pattern.txt`
-   - **For URLs:** derive slug from domain + page title, e.g. `2026-04-15-nytimes-ai-article.txt`
-   - **For pasted text:** use slug from first-line topic, e.g. `2026-04-15-session-notes.txt`
+     - Example: `2026-04-15-auth-token-pattern.md`
+   - **For URLs:** derive slug from domain + page title, e.g. `2026-04-15-nytimes-ai-article.md`
+   - **For pasted text:** use slug from first-line topic, e.g. `2026-04-15-session-notes.md`
    - **For files:** copy as-is with date prefix, e.g. `2026-04-15-diagram.png` (assets go in `raw/assets/`)
 2. **Check existing pages** — does this topic already have wiki pages?
 3. **Write or merge** — create new page or append to existing using merge strategy

@@ -92,9 +92,9 @@ wiki/
 ├── index.md            ← Auto-maintained catalog (regenerated after any page change)
 ├── log.md              ← Append-only operation chronicle
 ├── raw/                ← Layer 1: Immutable source material (never modify)
-│   ├── articles/       ← Filename format: `{YYYY-MM-DD}-{slug}.txt`
+│   ├── articles/       ← Filename format: `{YYYY-MM-DD}-{slug}.md`
 │   ├── papers/        ← Filename format: `{YYYY-MM-DD}-{slug}.pdf`
-│   ├── transcripts/    ← Filename format: `{YYYY-MM-DD}-{slug}.txt`
+│   ├── transcripts/    ← Filename format: `{YYYY-MM-DD}-{slug}.md`
 │   └── assets/        ← Filename format: `{YYYY-MM-DD}-{slug}.{ext}`
 └── *.md                ← Layer 2: Wiki pages (agent-owned)
 ```
