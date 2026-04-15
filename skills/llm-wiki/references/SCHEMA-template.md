@@ -82,6 +82,7 @@ Create a new page only when:
 - **Wiki pages are git-ignored** — `wiki/` is project-local by default
 - **Cross-references required** — every page must link to at least 2 other pages
 - **Keep pages scannable** — split pages over 200 lines into sub-pages
+- **Raw source naming** — use `{YYYY-MM-DD}-{slug}.{ext}` format so sources are chronological and searchable
 
 ## Storage Layout
 
@@ -91,10 +92,10 @@ wiki/
 ├── index.md            ← Auto-maintained catalog (regenerated after any page change)
 ├── log.md              ← Append-only operation chronicle
 ├── raw/                ← Layer 1: Immutable source material (never modify)
-│   ├── articles/
-│   ├── papers/
-│   ├── transcripts/
-│   └── assets/
+│   ├── articles/       ← Filename format: `{YYYY-MM-DD}-{slug}.txt`
+│   ├── papers/        ← Filename format: `{YYYY-MM-DD}-{slug}.pdf`
+│   ├── transcripts/    ← Filename format: `{YYYY-MM-DD}-{slug}.txt`
+│   └── assets/        ← Filename format: `{YYYY-MM-DD}-{slug}.{ext}`
 └── *.md                ← Layer 2: Wiki pages (agent-owned)
 ```
 
